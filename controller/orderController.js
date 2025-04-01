@@ -6,6 +6,8 @@ export const createOrder = async (req, res) => {
   
   const { member_id, total_price, payment_method, zipcode, address, detail_address, cartItems } = req.body;
   console.log(cartItems);
+  console.log(req.body);
+  
 
     // if (!member_id || !total_price || !payment_method || !zipcode || !address || !detail_address || !cartItems) {
     //     return res.status(400).json({ message: "필수 정보를 입력해주세요." });
