@@ -3,9 +3,9 @@ import * as orderRepository from "../repository/orderRepository.js";
 
 // 결제 완료 후 실행되는 주문 생성 함수
 export const createOrder = async (req, res) => {  
-  console.log(req.body);
   
-    // const { member_id, total_price, payment_method, zipcode, address, detail_address, cartItems } = req.body;
+  const { member_id, total_price, payment_method, zipcode, address, detail_address, cartItems } = req.body;
+  console.log(cartItems);
 
     // if (!member_id || !total_price || !payment_method || !zipcode || !address || !detail_address || !cartItems) {
     //     return res.status(400).json({ message: "필수 정보를 입력해주세요." });
