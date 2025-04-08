@@ -42,7 +42,7 @@ export const paymentKakaopay = async (req, res) => {
 export const paymentKakaopayApprove = async (req, res) => {
     try {
         const { pg_token, tid, id, total_amount, partner_order_id } = req.body;
-        const KAKAO_ADMIN_KEY = "ec4f35c9da872eac46fb9893573e4a90";
+        const KAKAO_ADMIN_KEY = "19d957318f240e27d2141da8fe1c92d7";
 
         const response = await axios.post(
             "https://kapi.kakao.com/v1/payment/approve",
